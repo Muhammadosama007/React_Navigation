@@ -1,18 +1,17 @@
-import React from "react";
+import React, { createElement } from "react";
 
 function AfterConversion() {
-  return React.createElement(
+  return createElement(
     "div",
     null,
     React.createElement(
       "div",
-      {
-        className: "hello",
-        id:"demo",
-        
-      },
-      React.createElement("h1", { id: "hello" }, "Conversion")
-    )
+    {
+      className:"con",
+      id:"con",
+    },"Osama",    
+  React.createElement("h1",{id:"osama"},"After_Conversion")
+  )
   );
 }
 

@@ -28,6 +28,7 @@ function App() {
 
   return (
     <>
+   <ConditionalRendering/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,16 +1,18 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 function Home() {
-  const navigate = useNavigate();
-  const gotomycart = () => {
-    navigate("/cart", { state: { name: "Azan" } });
-  };
+const navigate=useNavigate("");
+
+const goToMyCart=()=>{
+  navigate("/cart",{state:{name:"osama"}})
+}
   return (
     <>
-      <div>Home</div>
-      <button onClick={gotomycart}>Go to My Cart</button>
+    <div>Home</div>
+    <button onClick={goToMyCart}>GoToCart</button>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home
